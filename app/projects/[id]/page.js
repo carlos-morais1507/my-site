@@ -27,7 +27,7 @@ const Project = ({ params }) => {
       <Header />
       <div className='w-screen min-h-screen flex flex-col items-center mt-16 gap-4'>
         <div id='hero' className={`relative h-96 w-full flex items-center justify-center`}>
-          <img className='absolute h-96 w-full object-cover object-top brightness-50 overflow-hidden' src="/assets/images/desktop_snapshot_2.png" alt="a" />
+          <img className='absolute h-96 w-full object-cover object-top brightness-50 overflow-hidden' src={`/assets/images/desktop_snapshot_${project.id}.png`} alt="a" />
           <div className='w-full h-[101%] backdrop-blur-xl flex flex-col gap2 items-center justify-center'>
             <h1 className='drop-shadow-md'>{project.name}</h1>
             <p className='text-accent drop-shadow-md'>{project.stack}</p>

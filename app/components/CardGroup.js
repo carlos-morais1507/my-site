@@ -40,7 +40,7 @@ const CardGroup = () => {
       </Link>
       <div className='w-[50%] md:w-[60%] h-full flex flex-col'>
         <div className="h-1/2 w-full bg-[url('/assets/images/hero_me.png')] rounded-[28px] bg-cover bg-center" />
-        <div className={`flex flex-col h-1/2  -translate-y-4`}>
+        <div className={`flex flex-col h-1/2 -translate-y-4`}>
           <h3 className='drop-shadow-md translate-y-10 md:translate-y-5 translate-x-3'>Now probably...</h3>
           <img
             src={`/assets/images/${setActicityUrl()}.png`}
