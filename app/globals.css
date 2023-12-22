@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-size: 54px;
+  letter-spacing: -1%;
+  line-height: 59.4px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 45px;
+  letter-spacing: -1%;
+  line-height: 49.5px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 37px;
+  letter-spacing: -1%;
+  line-height: 40.7px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: -1%;
+  line-height: 23.4px;
+}
+
+.small {
+  font-size: 15px;
+  letter-spacing: -1%;
+  line-height: 19.5px;
+}
+
+.tiny {
+  font-size: 12.5px;
+  letter-spacing: -1%;
+  line-height: 16.3px;
+}
+
+body:hover > #cursor {
+  opacity: 1;
+}
+
+#card:hover {
+  background-size: 110%;
+  opacity: 0.8;
+}
+
+.nav_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px 20px;
+  transition: all 0.1s ease-in-out;
+  border-radius: 50px;
+}
+
+.btn_outline {
+  border: solid 1px #ededed;
+}
+
+.nav_btn:hover {
+  color: #00ffa6;
+  border-color: #00ffa6;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+.btn_fill {
+  background-color: #ededed;
+  color: #121212;
+}
+
+.btn_fill:hover {
+  color: #121212;
+  background-color: #00ffa6;
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  transform-origin: bottom;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  transform-origin: top;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.interactable {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+    letter-spacing: -1%;
+    line-height: calc(45px * 1.3);
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 37px;
+    letter-spacing: -1%;
+    line-height: calc(37px * 1.3);
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 18px;
+    letter-spacing: -1%;
+    line-height: calc(18px * 1.3);
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 16px;
+    letter-spacing: -1%;
+    line-height: calc(16px * 1.3);
+  }
+}
