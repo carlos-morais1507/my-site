@@ -5,10 +5,10 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 const Cursor = () => {
   const cursorRef = useRef();
-  const iconRef = useRef();
   const [interacting, setInteracting] = useState(false);
   const [isGreen, setIsGreen] = useState(false)
   const [isBlack, setIsBlack] = useState(false)
+  const [isRed, setIsRed] = useState(false)
 
   useEffect(() => {
     window.onmousemove = e => {
@@ -24,9 +24,13 @@ const Cursor = () => {
       const black = e.target.closest(".black_cursor"),
             inBlack = black !== null;
 
+      const red = e.target.closest(".red_cursor"),
+            inRed = red !== null;
+
       setInteracting(isInteracting);
       setIsGreen(inGreen);
       setIsBlack(inBlack);
+      setIsRed(inRed);
 
       const keyframes = {
         transform: `translate(${x - 10}px, ${y - 10}px) scale(${isInteracting ? 5 : 1})`
@@ -51,10 +55,11 @@ const Cursor = () => {
       id='cursor'
       className={`hidden md:flex justify-center items-center w-5 aspect-square rounded-full fixed top-0 left-0 z-[999] pointer-events-none opacity-0 transition-[background-color,_opacity] duration-200
       ${
-        isGreen ? "bg-accent" : (isBlack ? "bg-background" : "bg-text")
+        isGreen ? "bg-accent" : (isBlack ? "bg-background" : (isRed ? "bg-red" : "bg-text"))
       }
       `}>
-      <PiArrowUpRightBold ref={iconRef} className={`text-background scale-100 ${interacting ? "opacity-100" : "opacity-0"}`} />
+      <PiArrowUpRightBold className={`text-background scale-100 ${interacting ? "block" : "hidden"}`} />
+      <img src="/assets/images/for_the_horde.png" alt="Horde" className={`${isRed ? "block" : "hidden"}`} />
     </div>
   );
 }
