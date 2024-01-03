@@ -15,12 +15,12 @@ const MenuBtn = () => {
         onClick={() => setUp(!up)}
         />
         <div className={`bg-background w-36 absolute z-10 left-10 ${up ? "bottom-[417px] h-0" : "bottom-36 h-72"} transition-all duration-500`} />
-        <div className='absolute left-10 bottom-36 flex flex-col gap-4 items-start'>
+        <div className='absolute left-10 bottom-36 flex flex-col gap-2 items-start'>
           <AnimatePresence mode='wait'>
-            <Link href={"/about"} className='green_cursor nav_btn btn_outline'><FaUser /> About me</Link>
-            <Link href={"/skills"} className='green_cursor nav_btn btn_outline'><FaCode  /> Skills</Link>
-            <Link href={"/projects"} className='green_cursor nav_btn btn_outline'><FaLaptop  /> Projects</Link>
-            <Link href={"/contact"} className='green_cursor nav_btn btn_outline'><FaPhoneAlt /> Contact</Link>
+            <Link href={"/about"} className='green_cursor nav_btn btn_outline h-full small font-bold'><FaUser /> About me</Link>
+            <Link href={"/skills"} className='green_cursor nav_btn btn_outline h-full small font-bold'><FaCode  /> Skills</Link>
+            <Link href={"/projects"} className='green_cursor nav_btn btn_outline h-full small font-bold'><FaLaptop  /> Projects</Link>
+            <Link href={"/contact"} className='green_cursor nav_btn btn_outline h-full small font-bold'><FaPhoneAlt /> Contact</Link>
           </AnimatePresence>
         </div>
       </div>

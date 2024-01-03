@@ -55,7 +55,7 @@ body:hover > #cursor {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 15px 20px;
+  padding: 10px 15px;
   transition: all 0.1s ease-in-out;
   border-radius: 50px;
 }
@@ -107,6 +107,12 @@ body:hover > #cursor {
 
 .interactable {
   cursor: none;
+}
+
+li {
+  border: solid white ;
+  border-width: 0px 0px 0px 1px;
+  padding: 0px 5px 0px 5px;
 }
 
 @media (max-width: 768px) {
