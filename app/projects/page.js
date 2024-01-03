@@ -30,7 +30,7 @@ const Projects = () => {
             </Link>
           ))}
         </div>
-        <div className='flex flex-col items-center justify-center gap-2 h-[50vh] w-[50vw]'>
+        <div className='flex-col items-center justify-center gap-2 h-[50vh] w-[50vw] hidden md:flex'>
           <Link href={`/projects/${selection}`} className='h-[90%] w-full flex items-center justify-center'>
             <img
               src={`/assets/images/${mobile ? "mobile" : "desktop"}_snapshot_${selection}.png`}
