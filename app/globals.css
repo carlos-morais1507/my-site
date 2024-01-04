@@ -109,6 +109,14 @@ body:hover > #cursor {
   cursor: none;
 }
 
+#contact-items:hover > #contact-item {
+  opacity: 0.7;
+}
+
+#contact-items:hover > #contact-item:hover {
+  opacity: 1;
+}
+
 li {
   border: solid white ;
   border-width: 0px 0px 0px 1px;
