@@ -23,4 +23,12 @@ export const projectsList = [
     siteLink: 'https://car-showcase-mocha.vercel.app/',
     desc: 'Carhub is a project created in the NexJs13 / Typescript course from JavaScriptMastery. In this project I learned how to use props and constants to create a more uniform and fluid application.',
   },
+  {
+    id: '3',
+    name: 'Z-App',
+    stack: 'NextJs • TypeScript • Prisma',
+    repoLink: 'https://github.com/carlos-morais1507/z-app',
+    siteLink: 'https://z-app-carlos-morais1507.vercel.app/',
+    desc: 'Z-app is a social media project that I made testing OAuth2 and the integration between TypeScript and Prisma',
+  },
 ]
