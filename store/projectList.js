@@ -31,4 +31,12 @@ export const projectsList = [
     siteLink: 'https://z-app-carlos-morais1507.vercel.app/',
     desc: 'Z-app is a social media project that I made testing OAuth2 and the integration between TypeScript and Prisma',
   },
+  {
+    id: '4',
+    name: 'Conexão Empregar',
+    stack: 'NextJs • TypeScript • Python',
+    repoLink: 'https://github.com/carlos-morais1507',
+    siteLink: 'https://github.com/carlos-morais1507',
+    desc: 'Conexão Empregar is a voluntary project made by the developers in my church, It is being developed yet, so I do not have any links to ir right now :( But expect something great!',
+  },
 ]
